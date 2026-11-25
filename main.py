@@ -2,7 +2,9 @@
 """Have You Tried Turning It Off? -- make.fun one-liner entry.
 
 Writes one funny line, spoken by a hopeless tech support agent to a
-desperate customer, to /output/entry.txt.
+desperate customer, to /output/entry.txt. The agent is cheerfully
+useless: the computer has given up, and so has he, so his only plan
+is the classic restart, preferably together, sitting quietly a while.
 
 Stdlib only. No network, no files read, no arguments required.
 An optional first argument (or ENTRY_OUTPUT) overrides the output path,
@@ -13,8 +15,9 @@ import os
 import sys
 
 ENTRY = (
-    "Good news: your computer isn't broken, it has just stopped trying, "
-    "and honestly, same. Have you tried turning it off and on again?"
+    "Good news: your computer isn't broken, it's just given up, "
+    "and honestly, same. Have you tried turning it off and on again, "
+    "or should we both sit here a while?"
 )
 
 DEFAULT_OUTPUT = "/output/entry.txt"
